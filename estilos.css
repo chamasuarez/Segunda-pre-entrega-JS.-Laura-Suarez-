@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Open+Sans&family=PT+Serif&family=Roboto:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: rgb(25, 101, 25);
+}
+
+.navbar span {
+  color: rgb(235, 164, 32);
+}
+
+.navbar-toggler i {
+  color: rgb(235, 164, 32) !important;
+}
+
+.navbar img {
+  width: 40px;
+}
+
+.navbar .nav-link {
+  color: rgb(227, 150, 9) !important;
+  text-align: left;
+  text-decoration: none;
+  margin-right: 50px;
+}
+
+.g-f {
+  background-color: rgb(227, 150, 9);
+  color: black;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 0;
+  font-family: "DM Serif Display", serif;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 200px);
+  grid-gap: 20px;
+}
+
+.d {
+  text-align: center;
+  background-color: rgb(17, 109, 17);
+  color: black;
+  padding: 20px;
+  margin-bottom: 0;
+}
+
+.container {
+  background-color: rgb(235, 164, 32);
+  color: black;
+  text-align: right;
+  width: 100%;
+  height: auto;
+  padding: 50px;
+  margin-bottom: 0;
+  font-family: "Open Sans", sans-serif;
+  justify-content: center;
+  background-size: cover;
+}
+
+.rounded {
+  max-width: 100%;
+  height: auto;
+}
+
+.conteinerv {
+  border: 0;
+  border-radius: 0;
+  margin: 40px;
+  max-width: 540px;
+  max-height: 326px;
+  padding: 100;
+  position: absolute;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+}
+
+.img-fluid f {
+  background-color: grey;
+  background-position: left;
+  height: 250px;
+  width: auto;
+}
+
+.container-c {
+  color: white;
+  background-color: rgb(235, 164, 32);
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  background-size: 250px;
+  height: 150px;
+  width: auto;
+}
+
+.container-fluid-f {
+  background-color: rgb(17, 109, 17);
+  color: black;
+  text-align: center;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+@media only screen and (min-width: 480px) {
+  .g-f {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat 4, 200px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .g-f {
+    grid-template-columns: 2fr;
+  }
+  .img-fluid1 {
+    grid-column: 1/3;
+    grid-row: 1/3;
+  }
+  .img-fluid2 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+  .img-fluid3 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .img-fluid4 {
+    grid-column: 2/4;
+    grid-row: 2/3;
+  }
+}
+@media only screen and (min-width: 1024) {
+  .g-f {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 200px 200px;
+  }
+}
+
